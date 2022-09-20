@@ -1,0 +1,20 @@
+R_DEF: Internal format may change without notice
+local
+attr? borderAlpha
+attr? borderColor
+attr? borderLength
+attr? borderWidth
+attr? cornerRadius
+attr? finderOffset
+attr? laserColor
+attr? laserEnabled
+attr? maskColor
+attr? roundedCorner
+attr? shouldScaleToFill
+attr? squaredFinder
+color viewfinder_border
+color viewfinder_laser
+color viewfinder_mask
+integer viewfinder_border_length
+integer viewfinder_border_width
+styleable BarcodeScannerView shouldScaleToFill laserEnabled laserColor borderColor maskColor borderWidth borderLength roundedCorner cornerRadius squaredFinder borderAlpha finderOffset

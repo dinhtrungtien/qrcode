@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/ic_delete"
+        android:title="@string/delete" />
+
+    <item
+        android:id="@+id/txt"
+        android:icon="@drawable/ic_share"
+        android:title="TXT">
+        <menu>
+            <item
+                android:id="@+id/shareTxt"
+                android:title="Share TXT"/>
+            <item
+                android:id="@+id/downTxt"
+                android:title="Download TXT"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/csv"
+        android:icon="@drawable/ic_share"
+        android:title="CSV">
+        <menu>
+            <item
+                android:id="@+id/shareCsv"
+                android:title="Share CSV"/>
+            <item
+                android:id="@+id/downCsv"
+                android:title="Download CSV"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share"
+        android:title="@string/share" />
+
+    <item
+        android:id="@+id/edit"
+        android:icon="@drawable/ic_share"
+        android:title="Edit" />
+
+    <item
+        android:id="@+id/create"
+        android:icon="@drawable/ic_share"
+        android:title="Create" />
+
+</menu>

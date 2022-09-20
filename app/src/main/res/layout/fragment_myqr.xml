@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.CreateFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_Myqr"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_share"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_my"
+            android:src="@drawable/ic_my"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:id="@+id/tv_my"
+            android:text="@string/my_qr"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_share"
+        android:layout_marginStart="20dp"
+        android:text="@string/share_your_contact_info_via_qr"
+        app:layout_constraintTop_toBottomOf="@id/ll_Myqr"
+        app:layout_constraintStart_toStartOf="@id/ll_Myqr"
+        app:layout_constraintEnd_toEndOf="@id/ll_Myqr"
+        app:layout_constraintBottom_toTopOf="@id/tv_tt"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="@string/only_enter_data_you_want_to_share_when_done_click_export_next_time_you_open_my_qr_your_contact_qr_will_be_displayed"
+        android:id="@+id/tv_tt"
+        app:layout_constraintTop_toBottomOf="@id/tv_share"
+        app:layout_constraintStart_toStartOf="@id/tv_share"
+        app:layout_constraintEnd_toEndOf="@id/tv_share"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:hint="@string/full_name"
+        android:padding="10dp"
+        android:background="@drawable/botron"
+        app:layout_constraintTop_toBottomOf="@id/tv_tt"
+        app:layout_constraintStart_toStartOf="@id/tv_tt"
+        app:layout_constraintEnd_toEndOf="@id/tv_tt"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edt_organization"
+        android:hint="@string/organization"
+        android:padding="10dp"
+        android:background="@drawable/botron"
+        app:layout_constraintTop_toBottomOf="@id/edt_name"
+        app:layout_constraintStart_toStartOf="@id/edt_name"
+        app:layout_constraintEnd_toEndOf="@id/edt_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edt_address"
+        android:hint="@string/address"
+        android:padding="10dp"
+        android:background="@drawable/botron"
+        app:layout_constraintTop_toBottomOf="@id/edt_organization"
+        app:layout_constraintStart_toStartOf="@id/edt_organization"
+        app:layout_constraintEnd_toEndOf="@id/edt_organization"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edt_phone"
+        android:hint="@string/phone"
+        android:padding="10dp"
+        android:background="@drawable/botron"
+        app:layout_constraintTop_toBottomOf="@id/edt_address"
+        app:layout_constraintStart_toStartOf="@id/edt_address"
+        app:layout_constraintEnd_toEndOf="@id/edt_address"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:hint="@string/email"
+        android:padding="10dp"
+        android:background="@drawable/botron"
+        app:layout_constraintTop_toBottomOf="@id/edt_phone"
+        app:layout_constraintStart_toStartOf="@id/edt_phone"
+        app:layout_constraintEnd_toEndOf="@id/edt_phone"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edt_note"
+        android:hint="@string/note"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="100dp"
+        android:background="@drawable/botron"
+        app:layout_constraintTop_toBottomOf="@id/edt_email"
+        app:layout_constraintStart_toStartOf="@id/edt_email"
+        app:layout_constraintEnd_toEndOf="@id/edt_email"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_export"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/botron"
+        android:text="@string/export"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/edt_note"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@id/edt_note"
+        app:layout_constraintTop_toBottomOf="@id/edt_note"
+        app:layout_constraintVertical_bias="0.25" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

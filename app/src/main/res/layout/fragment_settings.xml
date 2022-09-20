@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bgc"
+    tools:context=".fragment.SettingsFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/color_scheme"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/blue"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/botron_blue"
+                    app:layout_constraintEnd_toStartOf="@id/red"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/red"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/botron_red"
+                    app:layout_constraintEnd_toStartOf="@id/orange"
+                    app:layout_constraintStart_toEndOf="@id/blue"
+                    app:layout_constraintTop_toTopOf="@id/blue" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/orange"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/botron_orange"
+                    app:layout_constraintEnd_toStartOf="@id/yellow"
+                    app:layout_constraintStart_toEndOf="@id/red"
+                    app:layout_constraintTop_toTopOf="@id/blue" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/yellow"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/botron_yellow"
+                    app:layout_constraintEnd_toStartOf="@id/brown"
+                    app:layout_constraintStart_toEndOf="@id/orange"
+                    app:layout_constraintTop_toTopOf="@id/blue" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/brown"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/botron_brown"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/yellow"
+                    app:layout_constraintTop_toTopOf="@id/blue" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/green"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/botron_green"
+                    app:layout_constraintEnd_toEndOf="@id/blue"
+                    app:layout_constraintStart_toStartOf="@id/blue"
+                    app:layout_constraintTop_toBottomOf="@id/blue" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/purpleBlue"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/botron_purpleblue"
+                    app:layout_constraintEnd_toEndOf="@id/red"
+                    app:layout_constraintStart_toStartOf="@id/red"
+                    app:layout_constraintTop_toBottomOf="@id/red" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/lightGreen"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/botron_lightgreen"
+                    app:layout_constraintEnd_toEndOf="@id/orange"
+                    app:layout_constraintStart_toStartOf="@id/orange"
+                    app:layout_constraintTop_toBottomOf="@id/orange" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/pink"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/botron_pink"
+                    app:layout_constraintEnd_toEndOf="@id/yellow"
+                    app:layout_constraintStart_toStartOf="@id/yellow"
+                    app:layout_constraintTop_toBottomOf="@id/yellow" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/silver"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/botron_silver"
+                    app:layout_constraintEnd_toEndOf="@id/brown"
+                    app:layout_constraintStart_toStartOf="@id/brown"
+                    app:layout_constraintTop_toBottomOf="@id/brown" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/theme"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:id="@+id/theme"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <CheckBox
+                android:id="@+id/beep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/beep"
+                android:textColor="@color/black"
+
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/Vibrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/vibrate"
+                android:textColor="@color/black"
+
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/copy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/copy_to_clipboard"
+                android:textColor="@color/black"
+
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/url"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:text="@string/url_info"-->
+<!--                android:textColor="@color/black"-->
+
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/batch"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:text="@string/batch_scan_mode"-->
+<!--                android:textColor="@color/black"-->
+
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="bold" />-->
+
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/use"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:text="@string/use_auto_focus"-->
+<!--                android:textColor="@color/black"-->
+
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/touch"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:text="@string/touch_focus"-->
+<!--                android:textColor="@color/black"-->
+
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="bold" />-->
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+me.dm7.barcodescanner.core
+attr borderAlpha
+attr borderColor
+attr borderLength
+attr borderWidth
+attr cornerRadius
+attr finderOffset
+attr laserColor
+attr laserEnabled
+attr maskColor
+attr roundedCorner
+attr shouldScaleToFill
+attr squaredFinder
+color viewfinder_border
+color viewfinder_laser
+color viewfinder_mask
+integer viewfinder_border_length
+integer viewfinder_border_width
+styleable BarcodeScannerView borderAlpha borderColor borderLength borderWidth cornerRadius finderOffset laserColor laserEnabled maskColor roundedCorner shouldScaleToFill squaredFinder

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.CreateFragment">
+
+
+    <LinearLayout
+        android:id="@+id/ll_Myqr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/img_my"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_my"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="28dp" />
+
+        <TextView
+            android:id="@+id/tv_my"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/my_qr"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:hint="@string/full_name"
+        android:padding="10dp"
+        android:background="@drawable/botron"
+        app:layout_constraintTop_toBottomOf="@id/ll_Myqr"
+        app:layout_constraintStart_toStartOf="@id/ll_Myqr"
+        app:layout_constraintEnd_toEndOf="@id/ll_Myqr"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edt_organization"
+        android:hint="@string/organization"
+        android:padding="10dp"
+        android:background="@drawable/botron"
+        app:layout_constraintTop_toBottomOf="@id/edt_name"
+        app:layout_constraintStart_toStartOf="@id/edt_name"
+        app:layout_constraintEnd_toEndOf="@id/edt_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edt_address"
+        android:hint="@string/address"
+        android:padding="10dp"
+        android:background="@drawable/botron"
+        app:layout_constraintTop_toBottomOf="@id/edt_organization"
+        app:layout_constraintStart_toStartOf="@id/edt_organization"
+        app:layout_constraintEnd_toEndOf="@id/edt_organization"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edt_phone"
+        android:hint="@string/phone"
+        android:padding="10dp"
+        android:background="@drawable/botron"
+        app:layout_constraintTop_toBottomOf="@id/edt_address"
+        app:layout_constraintStart_toStartOf="@id/edt_address"
+        app:layout_constraintEnd_toEndOf="@id/edt_address"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:hint="@string/email"
+        android:padding="10dp"
+        android:background="@drawable/botron"
+        app:layout_constraintTop_toBottomOf="@id/edt_phone"
+        app:layout_constraintStart_toStartOf="@id/edt_phone"
+        app:layout_constraintEnd_toEndOf="@id/edt_phone"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edt_note"
+        android:hint="@string/note"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="100dp"
+        android:background="@drawable/botron"
+        app:layout_constraintTop_toBottomOf="@id/edt_email"
+        app:layout_constraintStart_toStartOf="@id/edt_email"
+        app:layout_constraintEnd_toEndOf="@id/edt_email"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/exportContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/botron"
+        android:text="@string/export"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/edt_note"
+        app:layout_constraintStart_toStartOf="@id/edt_note"
+        app:layout_constraintTop_toBottomOf="@id/edt_note"
+        app:layout_constraintVertical_bias="0.09" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
